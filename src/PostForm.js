@@ -10,12 +10,12 @@ class PostForm extends Component {
             id: new Date(),
             title,
             message,
+            isEdited: false
         };
         this.props.dispatch({
             type: 'ADD_POST',
             data
-            }
-        );
+        });
         this.getTitle.value = '';
         this.getMessage.value = '';
     };
